@@ -4,7 +4,7 @@
     "heroes": ["닥쵸", "정글전사", "마들렌", "뱀파", "스파클링", "페스츄리"],
     "start_cool": [
       {
-        "time": "4초 -> 5초",
+        "time": "4초 -> 3초",
         "chance": 10.3,
         "desc": "이상쿨감토핑"
       }
@@ -12,49 +12,49 @@
     "list": [
       {
         "cool": "13초",
-        "jewel_x": 0.0,
+        "jewel_no": 0.0,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "12초",
-        "jewel_x": 7.7,
+        "jewel_no": 7.7,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "11초",
-        "jewel_x": 15.4,
+        "jewel_no": 15.4,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "10초",
-        "jewel_x": 23.1,
+        "jewel_no": 23.1,
         "level_10": 0.7,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "9초",
-        "jewel_x": null,
+        "jewel_no": null,
         "level_10": 10.6,
         "level_11": 9.0,
         "level_12": 7.2
       },
       {
         "cool": "8초",
-        "jewel_x": null,
+        "jewel_no": null,
         "level_10": 20.5,
         "level_11": 19.1,
         "level_12": 17.6
       },
       {
         "cool": "7초",
-        "jewel_x": null,
+        "jewel_no": null,
         "level_10": null,
         "level_11": 29.2,
         "level_12": 27.9
@@ -62,312 +62,311 @@
     ]
   },
   {
-    "type": "일반쿨바임 13초",
-    "heroes": ["", "", ""],
+    "type": "일반쿨바임 14초",
+    "heroes": ["블랙레이즌", "감초", "구미호"],
     "start_cool": [
       {
-        "time": "4c초 -> 5초",
-        "chance": 10.3,
-        "desc": "이상쿨감토핑"
+        "time": "4초 -> 3초",
+        "chance": 16.7
       }
     ],
     "list": [
       {
+        "cool": "14초",
+        "jewel_no": 0.0,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
         "cool": "13초",
-        "jewel_x": 0.0,
+        "jewel_no": 7.2,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "12초",
-        "jewel_x": 0.0,
+        "jewel_no": 14.3,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "11초",
-        "jewel_x": 0.0,
+        "jewel_no": 21.5,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "10초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": 28.6,
+        "level_10": 7.8,
+        "level_11": 6.1,
+        "level_12": 4.3
       },
       {
         "cool": "9초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 17.0,
+        "level_11": 15.5,
+        "level_12": 13.9
       },
       {
         "cool": "8초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "7초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 26.2,
+        "level_11": 24.9,
+        "level_12": 23.5
       }
     ]
   },
   {
-    "type": "일반쿨바임 13초",
-    "heroes": ["", "", ""],
+    "type": "일반쿨바임 15초",
+    "heroes": ["라떼", "딸크", "호밀", "에소", "아몬드", "독버섯", "무화과"],
     "start_cool": [
       {
-        "time": "4c초 -> 5초",
-        "chance": 10.3,
-        "desc": "이상쿨감토핑"
+        "time": "4초 -> 3초",
+        "chance": 22.3
       }
     ],
     "list": [
       {
+        "cool": "14초",
+        "jewel_no": 6.7,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
         "cool": "13초",
-        "jewel_x": 0.0,
+        "jewel_no": 13.4,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "12초",
-        "jewel_x": 0.0,
+        "jewel_no": 20.0,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "11초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": 26.7,
+        "level_10": 5.3,
+        "level_11": 3.6,
+        "level_12": 1.7
       },
       {
         "cool": "10초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 13.9,
+        "level_11": 12.3,
+        "level_12": 10.7
       },
       {
         "cool": "9초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 22.5,
+        "level_11": 21.1,
+        "level_12": 19.6
       },
       {
         "cool": "8초",
-        "jewel_x": 0.0,
+        "jewel_no": null,
         "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "7초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "level_11": 29.9,
+        "level_12": 28.6
       }
     ]
   },
   {
-    "type": "일반쿨바임 13초",
-    "heroes": ["", "", ""],
+    "type": "일반쿨바임 17초",
+    "heroes": ["허브", "석류"],
     "start_cool": [
       {
-        "time": "4c초 -> 5초",
-        "chance": 10.3,
-        "desc": "이상쿨감토핑"
+        "time": "5초 -> 4초",
+        "chance": 11.8
       }
     ],
     "list": [
       {
-        "cool": "13초",
-        "jewel_x": 0.0,
+        "cool": "16초",
+        "jewel_no": 5.9,
         "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
+        "cool": "15초",
+        "jewel_no": 11.8,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
+        "cool": "14초",
+        "jewel_no": 17.7,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
+        "cool": "13초",
+        "jewel_no": 23.6,
+        "level_10": 1.3,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "12초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": 29.5,
+        "level_10": 8.9,
+        "level_11": 7.2,
+        "level_12": 5.4
       },
       {
         "cool": "11초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 16.5,
+        "level_11": 14.9,
+        "level_12": 13.3
       },
       {
         "cool": "10초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 24.1,
+        "level_11": 22.7,
+        "level_12": 21.2
       },
       {
         "cool": "9초",
-        "jewel_x": 0.0,
+        "jewel_no": null,
         "level_10": null,
         "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "8초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "7초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "level_12": 29.1
       }
     ]
   },
   {
-    "type": "일반쿨바임 13초",
-    "heroes": ["", "", ""],
+    "type": "일반쿨바임 19초",
+    "heroes": ["퓨어바닐라"],
     "start_cool": [
       {
-        "time": "4c초 -> 5초",
-        "chance": 10.3,
-        "desc": "이상쿨감토핑"
+        "time": "6초 -> 5초",
+        "chance": 3.6
+      },
+      {
+        "time": "6초 -> 4초",
+        "chance": 21.1
       }
     ],
     "list": [
       {
-        "cool": "13초",
-        "jewel_x": 0.0,
+        "cool": "18초",
+        "jewel_no": 5.3,
         "level_10": null,
         "level_11": null,
         "level_12": null
+      },
+      {
+        "cool": "17초",
+        "jewel_no": 10.6,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
+        "cool": "16초",
+        "jewel_no": 15.8,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
+        "cool": "15초",
+        "jewel_no": 21.1,
+        "level_10": null,
+        "level_11": null,
+        "level_12": null
+      },
+      {
+        "cool": "14초",
+        "jewel_no": 26.4,
+        "level_10": 4.9,
+        "level_11": 3.1,
+        "level_12": 1.3
+      },
+      {
+        "cool": "13초",
+        "jewel_no": null,
+        "level_10": 11.7,
+        "level_11": 10.0,
+        "level_12": 8.3
       },
       {
         "cool": "12초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 18.5,
+        "level_11": 16.9,
+        "level_12": 15.4
       },
       {
         "cool": "11초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "jewel_no": null,
+        "level_10": 25.3,
+        "level_11": 23.9,
+        "level_12": 22.4
       },
       {
         "cool": "10초",
-        "jewel_x": 0.0,
+        "jewel_no": null,
         "level_10": null,
         "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "9초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "8초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "7초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
+        "level_12": 29.5
       }
     ]
   },
   {
-    "type": "일반쿨바임 13초",
-    "heroes": ["", "", ""],
+    "type": "일반쿨바임 8초",
+    "heroes": ["용감한쿠키"],
     "start_cool": [
       {
-        "time": "4c초 -> 5초",
-        "chance": 10.3,
-        "desc": "이상쿨감토핑"
+        "time": "2초 -> 1초",
+        "desc": "불가능"
       }
     ],
     "list": [
       {
-        "cool": "13초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "12초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "11초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "10초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
-        "cool": "9초",
-        "jewel_x": 0.0,
-        "level_10": null,
-        "level_11": null,
-        "level_12": null
-      },
-      {
         "cool": "8초",
-        "jewel_x": 0.0,
+        "jewel_no": 0.0,
         "level_10": null,
         "level_11": null,
         "level_12": null
       },
       {
         "cool": "7초",
-        "jewel_x": 0.0,
+        "jewel_no": 12.5,
         "level_10": null,
         "level_11": null,
         "level_12": null
+      },
+      {
+        "cool": "6초",
+        "jewel_no": 25.0,
+        "level_10": 3.2,
+        "level_11": 1.4,
+        "level_12": null
+      },
+      {
+        "cool": "5초",
+        "jewel_no": null,
+        "level_10": 19.3,
+        "level_11": 17.8,
+        "level_12": 16.3
       }
     ]
   }
