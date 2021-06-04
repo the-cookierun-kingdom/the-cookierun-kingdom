@@ -18,7 +18,7 @@ export const requestCoolTimeAsync = createAsyncThunk(
   'coolTime/fetchCoolTime',
   async () => {
     const response = await fetchCoolTime();
-    return response.data;
+    return response;
   }
 );
 
@@ -37,12 +37,13 @@ export const coolTimeSlice = createSlice({
       })
       .addCase(requestCoolTimeAsync.fulfilled, (state, action) => {
         state.status = 'idle';
-        state.value = action.payload;
+        state.list = action.payload;
       });
   },
 });
 
 export const selectCoolTime = (state: RootState) => state.coolTime.value;
+export const selectCoolTimeList = (state: RootState) => state.coolTime.list;
 
 export default coolTimeSlice.reducer;
 
