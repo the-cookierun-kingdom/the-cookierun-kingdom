@@ -1,20 +1,42 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from '../../app/store';
 import { fetchCoolTime } from './coolTimeAPI';
 
+export interface StartCool {
+  time: string;
+  chance?: number;
+  desc?: string;
+}
+
+export interface CoolTimeRow {
+  cool: string;
+  jewel_no: number | null;
+  level_10: number | null;
+  level_11: number | null;
+  level_12: number | null;
+}
+
+export interface CoolTime {
+  id: string;
+  type: string;
+  heroes: string[];
+  start_cool: StartCool[];
+  list: CoolTimeRow[];
+}
+
 export interface CoolTimeState {
-  list: any[];
-  value: number;
+  list: CoolTime[];
+  selectedType: string;
   status: 'idle' | 'loading' | 'failed';
 }
 
 const initialState: CoolTimeState = {
   list: [],
-  value: 0,
+  selectedType: '',
   status: 'idle',
 };
 
-export const requestCoolTimeAsync = createAsyncThunk(
+export const requestCoolTimeAsync = createAsyncThunk<CoolTime[]>(
   'coolTime/fetchCoolTime',
   async () => {
     const response = await fetchCoolTime();
@@ -29,6 +51,9 @@ export const coolTimeSlice = createSlice({
     // selectCoolTime: (state, action: PayloadAction<number>) => {
     //   state.value = action.payload;
     // },
+    selectCoolTime: (state, action: PayloadAction<string>) => {
+      state.selectedType = action.payload;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -38,12 +63,16 @@ export const coolTimeSlice = createSlice({
       .addCase(requestCoolTimeAsync.fulfilled, (state, action) => {
         state.status = 'idle';
         state.list = action.payload;
+        state.selectedType = action.payload[0].id;
       });
   },
 });
 
-export const selectCoolTime = (state: RootState) => state.coolTime.value;
-export const selectCoolTimeList = (state: RootState) => state.coolTime.list;
+export const { selectCoolTime } = coolTimeSlice.actions;
+
+export const selectedType = (state: RootState) => state.coolTime.selectedType;
+export const selectedCoolTime = (state: RootState) => state.coolTime.list.find(ct => ct.id === state.coolTime.selectedType);
+export const tabList = (state: RootState) => state.coolTime.list.map(({ id, type }) => ({ id, type }));
 
 export default coolTimeSlice.reducer;
 
