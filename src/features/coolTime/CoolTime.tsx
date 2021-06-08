@@ -14,16 +14,18 @@ function CooTimeTab() {
   const tabData = useAppSelector(tabList);
   const dispatch = useAppDispatch();
 
+  const items = tabData.map(({id, type}) => (
+    <li key={id}>
+      <button
+        className={`nav-link ${currentType === id && 'active'}`}
+        onClick={() => dispatch(selectCoolTime(id))}
+      >{type}</button>
+    </li>
+  ));
+
   return (
     <ul className="nav nav-tabs my-3">
-      {tabData.map(({id, type}) => (
-        <li key={id}>
-          <button
-            className={`nav-link ${currentType === id && 'active'}`}
-            onClick={() => dispatch(selectCoolTime(id))}
-          >{type}</button>
-        </li>
-      ))}
+      {items}
     </ul>
   );
 }
@@ -35,15 +37,17 @@ function CoolTimeDisplay() {
     return null;
   }
 
+  const listItem = coolTime.start_cool.map((st, idx) => (
+    <li key={idx}>{ st.time }{ st.chance && `, ${st.chance}%` }{ st.desc && `, ${st.desc}` }</li>
+  ));
+
   return (
     <div className="alert alert-success" role="alert">
       <h5 className="alert-heading">일반쿨타임 { coolTime.type }</h5>
       <hr />
       <p className="mb-0">{ coolTime.heroes.join(', ') }</p>
       <ul className="mb-0">
-        {coolTime.start_cool.map((st, idx) => (
-          <li key={idx}>{ st.time }{ st.chance && `, ${st.chance}%` }{ st.desc && `, ${st.desc}` }</li>
-        ))}
+        {listItem}
       </ul>
     </div>
   );
@@ -51,6 +55,20 @@ function CoolTimeDisplay() {
 
 function CoolTable() {
   const coolTime = useAppSelector(selectedCoolTime);
+
+  if (!coolTime) {
+    return null;
+  }
+
+  const bodyRow = coolTime.list.map((ct, idx) => (
+    <tr key={idx} className="text-right">
+      <td>{ ct.cool }</td>
+      <td>{ ct.jewel_no || 'x' }</td>
+      <td>{ ct.level_10 || 'x' }</td>
+      <td>{ ct.level_11 || 'x' }</td>
+      <td>{ ct.level_12 || 'x' }</td>
+    </tr>
+  ));
 
   return (
     <table className="table table-striped text-center">
@@ -64,26 +82,18 @@ function CoolTable() {
         </tr>
       </thead>
       <tbody>
-        {coolTime && coolTime.list.map((ct, idx) => (
-          <tr key={idx} className="text-right">
-            <td>{ ct.cool }</td>
-            <td>{ ct.jewel_no || 'x' }</td>
-            <td>{ ct.level_10 || 'x' }</td>
-            <td>{ ct.level_11 || 'x' }</td>
-            <td>{ ct.level_12 || 'x' }</td>
-          </tr>
-        ))}
+        {bodyRow}
       </tbody>
     </table>
-  )
+  );
 }
-
 
 export function CoolTime() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(requestCoolTimeAsync());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
